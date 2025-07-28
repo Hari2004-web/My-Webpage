@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background-color: #006241;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  height: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 700;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: lavender;
+  font-weight: bold;
+  
+}
+
+.nav-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btns button {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.sign-in {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.sign-in a:hover{
+  font-weight: bold;
+  color: black;
+}
+
+.join-now {
+  background-color: #fff;
+  color: #006241;
+  font-weight: bold;
+}
+.join-now a:hover{
+  font-style: oblique;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+.search-box input {
+  border: none;
+  padding: 8px 12px;
+  outline: none;
+  width: 250px;
+
+}
+.search-box button a {
+  background-color: whitesmoke;
+  border: none;
+  color: black;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: ease 0.3s;
+}
+.search-box button:hover {
+  font-weight: bold;
+  color: #735557;
+ 
+}
+
+
+
+.hero {
+  /*background-image: url('https://media.gettyimages.com/id/458726871/photo/grande-starbucks-to-go-cup-on-table.jpg?s=612x612&w=gi&k=20&c=CEpmoURrzfkyqYz4vWMLdA-b4NjHFvikKMj4p29rSRI=');*/
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  animation: backgroundSlide 15s infinite;
+  position: relative;
+}
+@keyframes backgroundSlide{
+  0% {background-image: url('https://img.freepik.com/free-photo/closeup-shot-person-pouring-coffee-powder-coffee_181624-616.jpg?uid=R209168292')}
+  25% {
+    background-image: url('https://img.freepik.com/premium-photo/starbucks-cup-with-white-cap-it-sits-table_198067-887943.jpg?uid=R209168292&ga=GA1.1.978487279.1753677501&semt=ais_hybrid&w=740&q=80')
+  }
+  50% {
+     background-image: url('https://img.freepik.com/free-photo/coffee-latte-with-cookies-coffiee-beans_141793-17440.jpg?uid=R209168292&ga=GA1.1.978487279.1753677501&semt=ais_hybrid&w=740&q=80')
+  }
+  75% {
+    background-image: url('https://media.istockphoto.com/id/1209038448/photo/the-original-stabucks-coffee-for-their-customer-at-the-starbucks-reserve-roastery-in-shanghai.jpg?b=1&s=612x612&w=0&k=20&c=atX6ozB6tpGIL11bfpCicSqqt_zcfRF5lpvC-3_tfe8=')
+  }
+  100% {
+    background-image: url('https://img.freepik.com/premium-psd/cup-coffee-with-spoon-spoon-plate_1250731-396.jpg?w=2000')
+  }
+}
+
+.hero-content {
+  width: 300px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: maroon;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.cta-button {
+  background-color: skyblue;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #005c3b;
+}
+
+.emptyspace {
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  align-items: baseline;
+  background-color: #d7dfda;
+}
+.emptyspace h1{
+  color: black;
+  font-size: large;
+  text-align: top;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.round-image {
+  list-style: none;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.round-image  {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+.round-image img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.round-image img:hover{
+  transform: scale(0.90);
+  transition: ease 0.3s;
+  display: block;
+   transform: bold;
+}
+
+.round-image span {
+  display: block;
+  font-size: 14px;
+   text-align: center;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+ 
+}
+.round-image span:hover{
+  display: block;
+  transform: bolder;
+}
+
+.hero2 {
+  background-size: cover;
+  background-position: center;
+  height: 40vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  background-color: #d7dfda;
+  background-image: url('https://img.freepik.com/free-psd/coffee-shop-banner-template-pack_23-2148458477.jpg?uid=R209168292&ga=GA1.1.978487279.1753677501&semt=ais_hybrid&w=740&q=80');
+
+  }
+
+.hero2:hover{
+  transform: scale(1.02);
+  transition: 0ms;
+  border-radius: 5%;
+}/*
+.hero2-content {
+  width: 300px;
+  height: auto;
+  background-image: url('C:\Users\NETCOM\Downloads\Starbucks images vectors, photos and PSD files _ Free download\imgi_41_closeup-shot-person-pouring-coffee-powder-coffee_181624-616.jpg');
+  background-size: cover;
+  background-position: center;
+}*/
+.hero2-content  h1{
+  align-items: top;
+  justify-content: left;
+  text-align: left;
+  color: black;
+  padding: 20px;
+  font-size: 200%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.hero2-content p{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 10%;
+  padding-bottom: 20px;
+  color: lightcyan;
+  font-size: larger;
+}
+.cta-button2 {
+  background-color:  black;
+  color: white;
+
+  padding: 0.75rem 1.5rem;
+  display: inline;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0, 0.1);
+}
+.cta-button2:hover{
+  background-color: grey;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0, 0.1);
+}
+
+.emptyspace2 {
+   background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  align-items: last baseline;
+  background-color: #F3E9DC;
+  
+
+}
+
+
+.logo1 {
+  height: 50px;
+  align-items: left;
+}
+footer {
+  background-color: black;
+  color: white;
+  
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+footer p{
+  text-align: center;
+}
+
+.copy2 {
+  list-style: none;
+  display:flex;
+  gap: 2rem;
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+.copy2 a{
+   color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.copy2 a:hover {
+  color: lavender;
+  font-weight: bolder;
+}
+
+
